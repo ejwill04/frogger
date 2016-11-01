@@ -7,8 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Frogger</title>
   </head>
-  <body>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="main.bundle.js"></script>
+  <body onload="draw();">
+    <!-- not sure if the onload draw function is needed here -->
+    <h1>Frogger</h1>
+    <canvas id="game" width="1000" height="600">test text</canvas>
+    <script type='text/javascript' src="./lib/index.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <!-- <script src="main.bundle.js"></script> -->
   </body>
 </html>

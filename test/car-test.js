@@ -10,8 +10,9 @@ describe('Car', function() {
   });
 
   it('should instantiate our good friend, car', function () {
-    var car = new Car();
-    assert.isObject(car);
+    var canvas = document.getElementById('game');
+    var car = new Car(null, null, null, null, null, canvas);
+     assert.isObject(car);
   });
 
   it('should take the first argument and set it as the "x" property of the instantiated object', function () {

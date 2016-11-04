@@ -1,3 +1,8 @@
+var chai = require('chai');
+var assert = chai.assert;
+
+var Car = require('../lib/world');
+
 describe('World', function () {
 
   it('should be a function', function () {

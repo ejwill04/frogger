@@ -53,9 +53,11 @@
 	var frogHopDistance = 10;
 
 	requestAnimationFrame(function gameLoop() {
-	  collisionDetection();
+	  logCollisionDetection();
 	  clearCanvas();
+	  collisionDetection();
 	  buildAndStartCars();
+	  // buildAndStartLogs();
 	  frogger();
 	  requestAnimationFrame(gameLoop);
 	});
@@ -69,14 +71,19 @@
 	  });
 	}
 
-	var GreenThing = function () {
-	  this.x = canvas.width / 2 - frogSize / 2;
-	  this.y = canvas.height - frogSize;
-	  this.width = frogSize;
-	  this.height = frogSize;
-	};
+	// function logCollisionDetection() {
+	//   logs.forEach(function(log) {
+	//     if (frog.x < log.x + log.width - frogHopDistance &&
+	//         frog.x + frog.width - frogHopDistance > log.x &&
+	//         frog.y < log.y + log.height &&
+	//         frog.height + frog.y > log.y) {
+	//           frog.x++;
+	//         console.log("cruising");
+	//     }
+	//   });
+	// }
 
-	var frog = new GreenThing();
+	var frog = new Frog();
 
 	function frogger() {
 	  drawFrog();
@@ -141,6 +148,38 @@
 
 	var cars = [];
 
+	// var logs = [];
+	//
+	// function Log(x, y, width, height, direction) {
+	//   this.x = x;
+	//   this.y = y;
+	//   this.width = width;
+	//   this.height = height;
+	//   this.direction = direction;
+	// }
+	//could we create prototypes for x and y that increment through Car?
+
+	// Log.prototype.draw = function() {
+	//   context.fillRect(this.x, this.y, this.width, this.height, this.direction);
+	//   return this;
+	//
+	// };
+	//
+	// Log.prototype.move = function() {
+	//   if (this.x !== canvas.width) {
+	//     this.x++;
+	//   } else {
+	//     this.x = -this.width;
+	//   }
+	//   return this;
+	// };
+
+	// for (var i = 0; i < 5; i++) {
+	//   x = -50 * i;
+	//   logs.push(new Log(x, 250, 70, 10));
+	// }
+
+
 	for (var i = 0; i < 5; i++) {
 	  x = -200 * i;
 	  cars.push(new Car(x, 100, carSize, carSize, 'right', canvas));
@@ -166,6 +205,10 @@
 	    car.draw().move();
 	  });
 	}
+
+	// function buildAndStartLogs () {
+	//   logs.forEach(function (log) { log.draw().move();});
+	// }
 
 	function clearCanvas() {
 	  context.clearRect(0, 0, canvas.width, canvas.height);

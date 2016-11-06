@@ -8,11 +8,16 @@
     <title>Frogger</title>
   </head>
   <body>
-    <!-- not sure if the onload draw function is needed here -->
-    <h1>Frogger</h1>
-    <h2>Lives: <span id="lives-counter"></span></h2>
-    <canvas id="game" width="1000" height="600">test text</canvas>
+    <section id="welcome-screen">
+      <h1>Frogger Game</h1>
+      <button type="button" name="button" id="start-button">Start Playing</button>
+    </section>
+    <section id="game-screen">
+      <h1>Frogger</h1>
+      <h2>Lives: <span id="lives-counter"></span></h2>
+      <canvas id="game" width="1000" height="600"></canvas>
     <!-- <script type='text/javascript' src="./lib/index.js"></script> -->
+    </section>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="main.bundle.js"></script>
   </body>

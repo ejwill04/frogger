@@ -36,16 +36,13 @@ describe('Frog', function() {
     assert.equal(frog.world, world);
   });
 
-  it('should set a property of context to world.context', function (){
-    assert.equal(frog.context, 300);
-  });
-
   it('draw should be a prototype of Car', function () {
     assert.isFunction(frog.draw);
   });
 
   it('"frog.move()" should increment by 1 if direction is right', function () {
-    frog.move();
+    var frogHopDistance = 10;
+    frog.move(frogHopDistance);
     var moveKeyStatus = {right: true};
     document.addEventListener("keydown", true, false);
     assert.equal(frog.x, 510);

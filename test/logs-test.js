@@ -1,9 +1,9 @@
 var chai = require('chai');
 var assert = chai.assert;
-
 var Log = require('../lib/logs');
 
 describe('Log', function() {
+  var world = {context: 300, width: 500, height: 700};
 
   it('should be a function', function () {
     assert.isFunction(Log);
@@ -41,14 +41,21 @@ describe('Log', function() {
   });
 
   it('should take a sixth arguement and set it as the "canvas" property of the instantiated object', function () {
-    var logs = new Log(15, 30, 50, 80, 'right');
-    assert.equal(logs.canvas);
+    var log = new Log(15, 30, 50, 80, 'right');
+    assert.equal(log.canvas);
   });
 
-  it.skip('"move()" should increment the "x" property by 1', function () {
-    var logs = Log(50, 30, 50, 80, 'right');
-    this.move();
-    assert.equal(logs.x, 51);
+  it('"log.move(velocity)" should increment the x by gameBlock if direction is right', function () {
+    var log = new Log(50, 30, 50, 50, 'right', world);
+    var velocity = 50;
+    log.move(velocity);
+    assert.equal(log.x, 100);
   });
 
+  it('"log.move()" should decrement x by gameBlock if direction is left', function () {
+    var log = new Log(50, 30, 50, 50, 'left', world);
+    var velocity = 50;
+    log.move(velocity);
+    assert.equal(log.x, 0);
+  });
 });

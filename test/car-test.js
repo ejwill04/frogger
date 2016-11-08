@@ -3,7 +3,7 @@ var assert = chai.assert;
 var Car = require('../lib/car');
 
 describe('Car', function() {
-  var world = {context: 300};
+  var world = {context: 300, width: 500, height: 700 };
   var car = new Car(25, 15, 50, 25, 'right', world);
 
   it('should be a function', function () {

@@ -36,7 +36,7 @@ describe('Frog', function() {
     assert.equal(frog.world, world);
   });
 
-  it('draw should be a prototype of Car', function () {
+  it('draw should be a prototype of Frog', function () {
     assert.isFunction(frog.draw);
   });
 

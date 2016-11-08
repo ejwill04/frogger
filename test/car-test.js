@@ -39,7 +39,7 @@ describe('Car', function() {
   });
 
   it('should set a property of context to world.context', function (){
-    assert.equal(car.context, 300);
+    assert.equal(car.world.context, 300);
   });
 
   it('draw should be a prototype of Car', function () {

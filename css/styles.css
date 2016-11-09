@@ -1,6 +1,17 @@
-/*html {
+
+body {
   background-color: green;
-}*/
+  height: 100%;
+  width: 100%;
+}
+#welcome-screen {
+  background-color: black;
+}
+
+.body {
+  border: solid 5px red;
+}
+
 
 h1 {
   text-align: center;
@@ -10,4 +21,42 @@ canvas {
   border: 1px solid black;
   display: flex;
   margin: 0 auto;
+}
+
+.logo {
+  height: 50%;
+  width: 50%;
+  margin: auto;
+  padding:3%;
+  text-align: center;
+}
+
+.logo {
+  height:100%;
+  width:100%;
+  background-repeat: no-repeat;
+  margin-bottom: -4px;
+}
+
+.skull {
+  height: 10%;
+  width: 10%;
+  vertical-align: bottom;
+}
+
+#start-button {
+  text-align: center;
+}
+
+.arcade {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+}
+
+.arcadeButton {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  color: green;
 }

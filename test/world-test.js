@@ -4,7 +4,7 @@ var World = require('../lib/world');
 
 describe('World', function () {
 
-  it.skip('should be a function', function () {
+  it.only('should be a function', function () {
     assert.isFunction(World);
   });
 

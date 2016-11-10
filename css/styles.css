@@ -1,84 +1,89 @@
+            /** Universal Styling **/
 body {
-  background-color: green;
+    background-color: green;
 }
+
+canvas {
+    border: 1px solid black;
+    display: flex;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+/** Font **/
+#instruction-text {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.game-button {
+  color: green;
+  display: block;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  margin: 40px auto;
+}
+
+            /*** Welcome Screen ***/
 
 #welcome-screen {
   background-color: black;
   height: 100%;
 }
 
-/*.body {
-  border: solid 5px red;
-}*/
-
-h1 {
-  text-align: center;
-  margin: 10px;
-}
-
-canvas {
-  border: 1px solid black;
-  display: flex;
-  margin: 0 auto;
-}
-
 #logo {
   display: block;
   margin: auto;
-  width: 70%;
   padding-top: 40px;
+  width: 70%;
 }
 
+              /*** Advancement Info Screens ***/
 
-#lives-and-level-wrapper {
+.winning-screen {
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+/** Image **/
+.bigSkull {
+  display: block;
+  height: 8%;
+  margin: auto;
+  width: 8%;
+}
+
+/** Font **/
+.advancement {
+  color: black;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  margin-top: 50px;
   text-align: center;
 }
+
+
+              /*** Game Screen ***/
+
 
 .lives-and-level {
   display: inline-block;
   margin: 10px;
 }
 
-/*.skull {
-  height: 4%;
-  width: 4%;
-  vertical-align: bottom;
-}*/
-
-.winning-screen {
-  height:100%;
-  width:100%;
-  background-repeat: no-repeat;
-
+#lives-and-level-wrapper {
+    text-align: center;
 }
 
-.advancement {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 20px;
+#spacebarEventText {
   text-align: center;
-  color: black;
-  margin-top: 50px;
-}
-
-#instruction-text {
-  margin-top: 30px;
   font-family: 'Press Start 2P', cursive;
-  font-size: 10px;
-  text-align: center;
-  color: white;
-}
-
-.game-button {
-  display: block;
-  margin: 40px auto;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 14px;
-  color: green;
-}
-
-.bigSkull {
-  display: block;
-  width: 8%;
-  height: 8%;
-  margin: auto;
 }

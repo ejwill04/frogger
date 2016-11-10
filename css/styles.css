@@ -1,20 +1,18 @@
-            /** Universal Styling **/
 body {
-    background-color: green;
+  background-color: green;
 }
 
 canvas {
-    border: 1px solid black;
-    display: flex;
-    margin: 0 auto;
+  border: 1px solid black;
+  display: flex;
+  margin: 0 auto;
 }
 
 h1 {
-    text-align: center;
-    margin: 10px;
+  text-align: center;
+  margin: 10px;
 }
 
-/** Font **/
 #instruction-text {
   color: white;
   font-family: 'Press Start 2P', cursive;
@@ -31,8 +29,6 @@ h1 {
   margin: 40px auto;
 }
 
-            /*** Welcome Screen ***/
-
 #welcome-screen {
   background-color: black;
   height: 100%;
@@ -45,15 +41,12 @@ h1 {
   width: 70%;
 }
 
-              /*** Advancement Info Screens ***/
-
 .winning-screen {
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
 }
 
-/** Image **/
 .bigSkull {
   display: block;
   height: 8%;
@@ -61,7 +54,6 @@ h1 {
   width: 8%;
 }
 
-/** Font **/
 .advancement {
   color: black;
   font-family: 'Press Start 2P', cursive;
@@ -70,17 +62,13 @@ h1 {
   text-align: center;
 }
 
-
-              /*** Game Screen ***/
-
-
 .lives-and-level {
   display: inline-block;
   margin: 10px;
 }
 
 #lives-and-level-wrapper {
-    text-align: center;
+  text-align: center;
 }
 
 #spacebarEventText {

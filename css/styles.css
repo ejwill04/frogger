@@ -1,19 +1,19 @@
 body {
   background-color: green;
-  height: 100%;
-  width: 100%;
 }
+
 #welcome-screen {
   background-color: black;
+  height: 100%;
 }
 
-.body {
+/*.body {
   border: solid 5px red;
-}
-
+}*/
 
 h1 {
   text-align: center;
+  margin: 10px;
 }
 
 canvas {
@@ -22,26 +22,28 @@ canvas {
   margin: 0 auto;
 }
 
-.logo {
-  height: 50%;
-  width: 50%;
+#logo {
+  display: block;
   margin: auto;
-  padding:3%;
+  width: 70%;
+  padding-top: 40px;
+}
+
+
+#lives-and-level-wrapper {
   text-align: center;
 }
 
-.logo {
-  height:100%;
-  width:100%;
-  background-repeat: no-repeat;
-  margin-bottom: -4px;
+.lives-and-level {
+  display: inline-block;
+  margin: 10px;
 }
 
-.skull {
-  height: 10%;
-  width: 10%;
+/*.skull {
+  height: 4%;
+  width: 4%;
   vertical-align: bottom;
-}
+}*/
 
 .winning-screen {
   height:100%;
@@ -50,26 +52,33 @@ canvas {
 
 }
 
-
-#start-button {
-  text-align: center;
-}
-
 .advancement {
   font-family: 'Press Start 2P', cursive;
   font-size: 20px;
   text-align: center;
   color: black;
+  margin-top: 50px;
 }
-.arcade {
+
+#instruction-text {
+  margin-top: 30px;
   font-family: 'Press Start 2P', cursive;
   font-size: 10px;
   text-align: center;
   color: white;
 }
 
-.arcadeButton {
+.game-button {
+  display: block;
+  margin: 40px auto;
   font-family: 'Press Start 2P', cursive;
   font-size: 14px;
   color: green;
+}
+
+.bigSkull {
+  display: block;
+  width: 8%;
+  height: 8%;
+  margin: auto;
 }

@@ -4,49 +4,53 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/normalize.css" media="screen" title="no title">
     <link rel="stylesheet" href="./css/styles.css" media="screen" title="no title">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Frogger</title>
   </head>
   <body>
     <section id="welcome-screen">
-      <article class = "logo">
-        <img src="../images/FroggerLogo.jpg" class = "logo">
-         <button type="button" name="button" id="start-button"><p3 class = "arcadeButton">Play!</p3></button><br>
-         <p3 class ="arcade">Instructions: Use the cursor keys to safely navigate your frog through the obstacles.</p3>
-      </article>
+        <img id="logo" src="../images/FroggerLogo.jpg" class="logo">
+        <p id="instruction-text">Instructions: Use the cursor keys to safely navigate your frog through the obstacles.</p>
+         <button type="button" name="button" class="game-button" id="start-button">Play</button>
+           <!-- <p class = "arcadeButton">Play!</p> -->
     </section>
 
     <section id="game-screen">
       <h1>Frogger</h1>
-      <h2><img src="../images/skull.png" class = "skull"> <span id="lives-counter"></span></h2>
-      <h2>Level: <span id="level-counter"></span></h2>
       <canvas id="game" style="background: url(./images/Background2.png)" width=500 height=700>
+      </canvas>
+      <article id="lives-and-level-wrapper">
+        <h3 class="lives-and-level">Lives: <span id="lives-counter"></span></h3>
+        <h3 class="lives-and-level">Level: <span id="level-counter"></span></h3>
+      </article>
+      <!-- <img id="lives-image" src="../images/skull.png" class="skull"> -->
     </section>
 
     <section id="death-screen">
-      <p2 class ="advancement">You Died</p2>
-      <article class = "skullDeath">
-        <img src="../images/skull.png" class = "bigSkull">
-        <button class = "restart-game-button"> restart </button>
+      <p class ="advancement">You Died</p>
+      <article id="skullDeath">
+        <img src="../images/skull.png" class="bigSkull">
+        <button class="game-button" id="restart-game-button"> restart </button>
       </article>
     </section>
 
     <section id="level-up">
-      <p2 class = "advancement">Level Up!</p2>
+      <p class="advancement">Level Up!</p>
+      <p id="spacebar">Press spacebar to start next level</p>
     </section>
 
     <section id="lost-life">
-      <p2 class = "advancement"> You lost a life!!</p2>
+      <p class="advancement"> You lost a life!!</p>
     </section>
 
-  </canvas>
     <!-- <script type='text/javascript' src="./lib/index.js"></script> -->
     <section class="images" style="visibility: hidden">
       <img src="./images/car-right.png" id="frog-death-img" width=100 height=100 alt="car"/>
       <img src="./images/car-right.png" id="car-right-image" width=50 height=50 alt="car"/>
       <img src="./images/frog.png" id="frog-image" width=50 height=50 alt="frog"/>
       <img src="./images/log.svg" id="log-image" width=50 height=50 alt="log"/>
+      <img src="../images/skull.png" id="lives-image" width="100" height="100">
     </section>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="main.bundle.js"></script>

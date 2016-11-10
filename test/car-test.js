@@ -4,6 +4,7 @@ var Car = require('../lib/car');
 
 describe('Car', function() {
   var world = {context: 300, width: 500, height: 700 };
+  var velocity = 1.4;
   var car = new Car(25, 15, 50, 25, 'right', world);
 
   it('should be a function', function () {
@@ -42,18 +43,18 @@ describe('Car', function() {
     assert.equal(car.world.context, 300);
   });
 
-  it('draw should be a prototype of Car', function () {
+  it('draw should be a prototype of car', function () {
     assert.isFunction(car.draw);
   });
 
-  it('"car.move()" should increment by 1 if direction is right', function () {
-    car.move();
-    assert.equal(car.x, 26);
+  it('"car.move(velocity)" should increment the x by velocity if direction is right', function () {
+    car.move(velocity);
+    assert.equal(car.x, 25 + velocity);
   });
 
-  it('"car.move()" should decrement by 1 if direction is left', function () {
+  it('"car.move(velocity)" should decrement the x by velocity if direction is left', function () {
     car.direction = "left";
-    car.move();
+    car.move(velocity);
     assert.equal(car.x, 25);
   });
 

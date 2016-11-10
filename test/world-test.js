@@ -37,6 +37,12 @@ describe('World', function () {
    assert.isFunction(world.carCollision);
  });
 
+ it.skip('carCollision should have a collision', function () {
+   var frog = (25, 25, 20, 20, 'world');
+   var cars = [car = 25, 15, 50, 25, 'right', 'world'];
+   world.carCollision(cars, frog);
+ });
+
  it('should have a prototype of winCollision', function () {
    assert.isFunction(world.winCollision);
  });

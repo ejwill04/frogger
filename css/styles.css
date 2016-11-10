@@ -1,43 +1,44 @@
 body {
-  background-color: green;
+    background-color: green;
 }
 
 #welcome-screen {
-  background-color: black;
-  height: 100%;
+    background-color: black;
+    height: 100%;
 }
+
 
 /*.body {
   border: solid 5px red;
 }*/
 
 h1 {
-  text-align: center;
-  margin: 10px;
+    text-align: center;
+    margin: 10px;
 }
 
 canvas {
-  border: 1px solid black;
-  display: flex;
-  margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    margin: 0 auto;
 }
 
 #logo {
-  display: block;
-  margin: auto;
-  width: 70%;
-  padding-top: 40px;
+    display: block;
+    margin: auto;
+    width: 70%;
+    padding-top: 40px;
 }
 
-
 #lives-and-level-wrapper {
-  text-align: center;
+    text-align: center;
 }
 
 .lives-and-level {
-  display: inline-block;
-  margin: 10px;
+    display: inline-block;
+    margin: 10px;
 }
+
 
 /*.skull {
   height: 4%;
@@ -46,39 +47,38 @@ canvas {
 }*/
 
 .winning-screen {
-  height:100%;
-  width:100%;
-  background-repeat: no-repeat;
-
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
 }
 
 .advancement {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 20px;
-  text-align: center;
-  color: black;
-  margin-top: 50px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    margin-top: 50px;
 }
 
 #instruction-text {
-  margin-top: 30px;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 10px;
-  text-align: center;
-  color: white;
+    margin-top: 30px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    text-align: center;
+    color: white;
 }
 
 .game-button {
-  display: block;
-  margin: 40px auto;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 14px;
-  color: green;
+    display: block;
+    margin: 40px auto;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    color: green;
 }
 
 .bigSkull {
-  display: block;
-  width: 8%;
-  height: 8%;
-  margin: auto;
+    display: block;
+    width: 8%;
+    height: 8%;
+    margin: auto;
 }

@@ -44,10 +44,24 @@ canvas {
   vertical-align: bottom;
 }
 
+.winning-screen {
+  height:100%;
+  width:100%;
+  background-repeat: no-repeat;
+
+}
+
+
 #start-button {
   text-align: center;
 }
 
+.advancement {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
 .arcade {
   font-family: 'Press Start 2P', cursive;
   font-size: 10px;

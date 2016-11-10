@@ -1,9 +1,18 @@
 var chai = require('chai');
 var assert = chai.assert;
 var World = require('../lib/world');
+var Car = require('../lib/car');
 
 describe('World', function () {
   var world = new World(context);
+  var lives = 3;
+  function livesCount () {
+    --lives;
+    // updateLivesCounter();
+    if(lives === 0) {
+      // deathScreen();
+    }
+  }
 
   it('should be a function', function () {
     assert.isFunction(World);
@@ -37,10 +46,23 @@ describe('World', function () {
    assert.isFunction(world.carCollision);
  });
 
- it.skip('carCollision should have a collision', function () {
+ it('carCollision should have a collision', function () {
    var frog = (25, 25, 20, 20, 'world');
-   var cars = [car = 25, 15, 50, 25, 'right', 'world'];
-   world.carCollision(cars, frog);
+   var cars = [];
+   cars.push(new Car(25, 50 * 12 - 8, 50, 50, 'left', 'world'));
+   assert.equal(lives, 3);
+   world.carCollision(cars, frog, 'resetlocation', 'livesCount');
+   livesCount();
+   assert.equal(lives, 2);
+ });
+
+ it('carCollision should not have a collision', function () {
+   var frog = (300, 325, 20, 20, 'world');
+   var cars = [];
+   cars.push(new Car(25, 50 * 12 - 8, 50, 50, 'left', 'world'));
+   assert.equal(lives, 2);
+   world.carCollision(cars, frog, 'resetlocation', 'livesCount');
+   assert.equal(lives, 2);
  });
 
  it('should have a prototype of winCollision', function () {

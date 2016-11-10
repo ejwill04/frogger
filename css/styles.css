@@ -29,6 +29,12 @@ h1 {
   margin: 40px auto;
 }
 
+#game-screen-button {
+  margin: 10px auto;
+  text-decoration: none;
+  outline: none;
+}
+
 #welcome-screen {
   background-color: black;
   height: 100%;

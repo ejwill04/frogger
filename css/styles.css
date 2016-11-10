@@ -2,35 +2,69 @@ body {
   background-color: green;
 }
 
-#welcome-screen {
-  background-color: black;
-  height: 100%;
-}
-
-/*.body {
-  border: solid 5px red;
-}*/
-
-h1 {
-  text-align: center;
-  margin: 10px;
-}
-
 canvas {
   border: 1px solid black;
   display: flex;
   margin: 0 auto;
 }
 
+h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+#instruction-text {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.game-button {
+  color: green;
+  display: block;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  margin: 40px auto;
+}
+
+#game-screen-button {
+  margin: 10px auto;
+  text-decoration: none;
+  outline: none;
+}
+
+#welcome-screen {
+  background-color: black;
+  height: 100%;
+}
+
 #logo {
   display: block;
   margin: auto;
-  width: 70%;
   padding-top: 40px;
+  width: 70%;
 }
 
+.winning-screen {
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
 
-#lives-and-level-wrapper {
+.bigSkull {
+  display: block;
+  height: 8%;
+  margin: auto;
+  width: 8%;
+}
+
+.advancement {
+  color: black;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -39,46 +73,11 @@ canvas {
   margin: 10px;
 }
 
-/*.skull {
-  height: 4%;
-  width: 4%;
-  vertical-align: bottom;
-}*/
-
-.winning-screen {
-  height:100%;
-  width:100%;
-  background-repeat: no-repeat;
-
-}
-
-.advancement {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 20px;
+#lives-and-level-wrapper {
   text-align: center;
-  color: black;
-  margin-top: 50px;
 }
 
-#instruction-text {
-  margin-top: 30px;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 10px;
+#spacebarEventText {
   text-align: center;
-  color: white;
-}
-
-.game-button {
-  display: block;
-  margin: 40px auto;
   font-family: 'Press Start 2P', cursive;
-  font-size: 14px;
-  color: green;
-}
-
-.bigSkull {
-  display: block;
-  width: 8%;
-  height: 8%;
-  margin: auto;
 }

@@ -4,7 +4,7 @@ var assert = chai.assert;
 var Frog = require('../lib/frog');
 
 describe('Frog', function() {
-  var world = {context: 300, width: 500, height: 700};
+  var world = {context: 300, width: 500, height: 700, block: 50, top: 0, bottom: 650, right: 450, left: 0};
   var frog = new Frog(250, 400, 50, 50, world);
 
 
@@ -42,29 +42,25 @@ describe('Frog', function() {
 
   it('"frog.move()" should decrement y by gameBlock if direction is up', function () {
     var keyStatus = {up: true};
-    var gameBlock = 50;
-    frog.move(gameBlock, keyStatus);
+    frog.move(keyStatus);
     assert.equal(frog.y, 350);
   });
 
   it('"frog.move()" should decrement x by gameBlock if direction is left', function () {
     var keyStatus = {left: true};
-    var gameBlock = 50;
-    frog.move(gameBlock, keyStatus);
+    frog.move(keyStatus);
     assert.equal(frog.x, 200);
   });
 
   it('"frog.move()" should increment x by gameBlock if direction is right', function () {
     var keyStatus = {right: true};
-    var gameBlock = 50;
-    frog.move(gameBlock, keyStatus);
+    frog.move(keyStatus);
     assert.equal(frog.x, 250);
   });
 
   it('"frog.move()" should increment y by gameBlock if direction is down', function () {
     var keyStatus = {down: true};
-    var gameBlock = 50;
-    frog.move(gameBlock, keyStatus);
+    frog.move(keyStatus);
     assert.equal(frog.y, 400);
   });
 
